@@ -1,6 +1,6 @@
 # Timer Application
 ---
-link: [click here to view the live demo]()
+link: [click here to view the live demo](https://timer-rho-seven.vercel.app/)
 
 A sleek, modern stopwatch application built with vanilla HTML, CSS, and JavaScript. Start timing your activities with an intuitive interface and smooth performance.
 
