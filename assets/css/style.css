@@ -22,7 +22,7 @@ body>h1 {
 }
 
 section {
-    width: 15rem;
+    width: 18rem;
     height: 25rem;
     border-radius: 0.5rem;
     background-color: rgb(17, 8, 39);
@@ -37,11 +37,17 @@ section {
     font-size: 6rem;
     text-align: center;
 }
+.btnDiv{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
 
 button {
     color: rgb(76, 26, 53);
     margin-left: 0.8rem;
     margin-top: 0.4rem;
+    margin-bottom: 1rem;
     width: 6rem;
     height: 2rem;
     font-weight: bold;
@@ -58,8 +64,8 @@ button:hover {
 
 .resetValue>p {
     color: rgb(151 35 98);
-    text-align: center;
-    margin-top: 0.4rem;
+    /* margin-top: 0.4rem; */
+    margin: 0.4rem 0.8rem;
     font-weight: bold;
 }
 

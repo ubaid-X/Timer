@@ -8,11 +8,21 @@ let resetDiv = document.querySelector('.resetValue');
 let startCount = 0;
 let intervalID;
 
+// function to format time
+let formatTime = (time) => {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+
+    minutes = minutes < 10 ? `0${minutes}` : minutes;
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
+    return `${minutes}:${seconds}`;
+} 
+
 // function to start the Timer
 let startTimer = () => {
-    countDownElement.innerText = startCount++;
+    countDownElement.innerText = formatTime(startCount++);
     intervalID = setInterval(() => {
-        countDownElement.innerText = startCount++;
+        countDownElement.innerText = formatTime(startCount++);
 
     }, 1000);
 };
@@ -25,14 +35,14 @@ let stopTimer = () => {
 // function for reset timer
 let resetTimer = () => {
     startCount = 0;
-    countDownElement.innerText = startCount;
+    countDownElement.innerText = formatTime(startCount);
     clearInterval(intervalID);
 };
 
 // function for to show specific time like stop time
 let getTime = () => {
     let para = document.createElement('p');
-    para.innerText = `The stop time is ${startCount - 1}`;
+    para.innerText = `The stop time is ${formatTime(startCount - 1)}`;
     resetDiv.append(para);
 }
 
