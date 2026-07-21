@@ -10,6 +10,7 @@ let intervalID;
 
 // function to start the Timer
 let startTimer = () => {
+    countDownElement.innerText = startCount++;
     intervalID = setInterval(() => {
         countDownElement.innerText = startCount++;
 

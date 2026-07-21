@@ -27,6 +27,7 @@ section {
     border-radius: 0.5rem;
     background-color: rgb(17, 8, 39);
     box-shadow: 3px 1px 20px rgb(169, 194, 56);
+    overflow: auto;
 }
 
 .startCount {
